@@ -1,0 +1,3689 @@
+<!-- PC區塊_主視覺開始 -->
+<meta name="viewport"
+  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta property="og:image" content="./images/fb-1200x628.jpg?v005" />
+<meta charset="UTF-8" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="./css/animates.css?v005">
+<link rel="stylesheet" type="text/css" href="./css/Boom.css" />
+<!-- 活動樣式開始 -->
+<style>
+  /* =====================================================================================
+........................................desktop版.......................................
+=======================================================================================*/
+
+
+  /*-------------------------*/
+  /* 基礎設定_樣式
+    ---------------------------*/
+
+  :focus {
+    outline: 0;
+  }
+
+  * {
+    /* outline: 1px solid #000; */
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    /* 必寫!!!*/
+    background-color: #37b5fd;
+
+    /* 使用skrollr.js時 打開 將高度歸零 */
+    height: 0 !important;
+    overflow: initial !important;
+  }
+
+  .vspc_bg {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-image: url(./images/bg.jpg?v005);
+    /* 滿版主視覺背景 */
+    background-repeat: no-repeat;
+    background-position: center top;
+    /* background-position: center 182px; */
+    /* background-attachment: fixed; */
+    /* 套HEADER時需要打開 */
+  }
+
+  /*-------------------------*/
+  /* 分場fixed _樣式
+    ---------------------------*/
+
+  .topbelt-fix {
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    background-color: #00a0e9;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .fix-box {
+    max-width: 1190px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* 視覺左上角活動LOGO_樣式
+    ---------------------------*/
+
+  .udn_logo {
+    width: 110px;
+    position: relative;
+  }
+
+  .udn_logo a {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .udn_logo img {
+    width: 100%;
+    display: block;
+    margin-top: 2px;
+  }
+
+  /* menu-group _樣式
+    ---------------------------*/
+
+  .menu-group {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  .topbelt-fix li {
+    position: relative;
+    padding: 0 12px;
+    font-size: 18px;
+  }
+
+  .topbelt-fix li::before {
+    content: "|";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 1px;
+    color: #ffffff;
+    opacity: 0.6;
+  }
+
+  .topbelt-fix li:first-child::before {
+    opacity: 0;
+  }
+
+  .topbelt-fix li a {
+    padding: 10px 0px;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all .3s;
+  }
+
+  .topbelt-fix li:hover a {
+    color: #f3e634;
+  }
+
+  .topbelt-fix .active a {
+    color: #f3e634;
+  }
+
+  /*-------------------------*/
+  /* vspc區塊_樣式
+    ---------------------------*/
+
+  .vspc {
+    width: 100%;
+    height: auto;
+    max-width: 1190px;
+    margin: 0 auto;
+    position: relative;
+    /* overflow: hidden; */
+  }
+
+  .vspc * {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+    list-style: none;
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .vspc img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+  }
+
+  /*-------------------------*/
+  /* main區塊_樣式 
+    ---------------------------*/
+
+  .vspc .main {
+    width: 100%;
+    height: 0;
+    background-image: url(./images/bg_1190_main.jpg?v005);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 47.816% 0;
+    /* 必填  請填入main高度 */
+    /* padding: 159.664% 0; */
+    position: relative;
+    /* background-color: #4fe10b; */
+  }
+
+  /* 視覺左上角活動LOGO_樣式
+    ---------------------------*/
+
+  .udnLOGO {
+    display: block;
+    z-index: 700;
+    position: absolute;
+    width: calc(139/1190*100%);
+    /* 更改數值 調整logo大小 */
+    left: calc(40/1190*100%);
+    top: calc(32/1190*100%);
+  }
+
+  .udnLOGO span {
+    display: block;
+    width: 100%;
+    height: 0;
+    background-size: 100% auto;
+    padding-bottom: calc(1/797*100%);
+    /* padding-bottom: calc(293/797*100%); */
+    /* 更改數值 調整logo整體高度*/
+    /* padding-bottom: calc(360/797*100%); */
+    /* 用第4/5 底色_logo 打開開素質 */
+    /* background-imag./images/new_udnlogo_02.svg); */
+  }
+
+  /* 背景動態_樣式
+    ---------------------------*/
+
+  /*標*/
+  .vspc .main .title {
+    width: calc(678 / 1190 * 100%);
+    height: 0;
+    padding-top: calc(572 / 1190 * 100%);
+    background-image: url(./images/title.png?v005);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    -webkit-animation: bounceInDown .5s .5s both;
+    -moz-animation: bounceInDown .5s .5s both;
+    -ms-animation: bounceInDown .5s .5s both;
+    -o-animation: bounceInDown .5s .5s both;
+    animation: bounceInDown .5s .5s both;
+  }
+
+  /* 小冰台 */
+  .vspc .main .iceberg03 {
+    width: calc(595 / 1190 * 100%);
+    height: 0;
+    padding-top: calc(186 / 1190 * 100%);
+    background-image: url(./images/iceberg03.png?v005);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: calc(453 / 1138 * 100%);
+    left: 0;
+    z-index: 0;
+  }
+
+  /* 冰台 */
+  .vspc .main .icicle {
+    width: calc(585 / 1190 * 100%);
+    height: 0;
+    padding-top: calc(343 / 1190 * 100%);
+    background-image: url(./images/icicle.png?v005);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: calc(438 / 1138 * 100%);
+    left: 0;
+    z-index: 53;
+  }
+
+  /* 折價劵 */
+  .vspc .main .coupon02 {
+    width: calc(300/ 1190 * 100%);
+    height: 0;
+    padding-top: calc(168 / 1190 * 100%);
+    background-image: url(./images/coupon02.png?v005);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: calc(511 / 1138 * 100%);
+    left: 10.333%;
+    z-index: 54;
+    cursor: pointer;
+  }
+
+  /* 冰塊 */
+  .vspc .main .coupon01 {
+    width: calc(300/ 1190 * 100%);
+    height: 0;
+    padding-top: calc(168 / 1190 * 100%);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: calc(511 / 1138 * 100%);
+    left: 10.333%;
+    z-index: 55;
+  }
+
+  .vspc .main .coupon01>img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* 按鈕 */
+  .vspc .main .button {
+    width: calc(203/ 1190 * 100%);
+    height: 0;
+    padding-top: calc(75 / 1190 * 100%);
+    background-image: url(./images/button.png?v005);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: calc(692 / 1138 * 100%);
+    left: 18.65%;
+    z-index: 56;
+  }
+
+  .vspc .main .button:after,
+  .vspc .main .button:before {
+    display: block;
+    padding: 0;
+    border-radius: 100px;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  .vspc .main .button:after,
+  .vspc .main .button:before {
+    background-color: #2fabeb;
+  }
+
+  .vspc .main .button:hover::after,
+  .vspc .main .button:hover::before {
+    background-color: #2fabeb;
+  }
+
+  .vspc .main .button:after,
+  .vspc .main .button:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: -5%;
+    left: 0%;
+    padding: 0;
+    box-shadow: none;
+    width: 100%;
+    height: 110%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.6;
+  }
+
+  .vspc .main .button:after,
+  .vspc .main .button:before {
+    -webkit-animation: button-play 1s infinite linear;
+    animation: button-play 1s infinite linear;
+  }
+
+  .vspc .main .button:before {
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+  }
+
+  /* 劍齒虎 */
+  .vspc .main .saber-tiger {
+    width: calc(241/ 1190 * 100%);
+    height: 0;
+    padding-top: calc(255 / 1190 * 100%);
+    background-image: url(./images/saber-tiger.png?v005);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: calc(469 / 1138 * 100%);
+    left: 37.47%;
+    z-index: 57;
+    -webkit-animation: zoomInRight .8s 1s both;
+    -moz-animation: zoomInRight .8s 1s both;
+    -ms-animation: zoomInRight .8s 1s both;
+    -o-animation: zoomInRight .8s 1s both;
+    animation: zoomInRight .8s 1s both;
+  }
+
+  /* 主商品 */
+  .vspc .product01 {
+    width: calc(585/ 1190 * 100%);
+    height: 0;
+    padding-top: calc(681 / 1190 * 100%);
+    background-image: url(./images/product01.png?v005);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: calc(35 / 1138 * 100%);
+    right: 0;
+    z-index: 51;
+  }
+
+  /* 商品區*/
+  .vspc .product01 {
+    transform: scale(1);
+    transition: all .3s;
+  }
+
+  .vspc .product01:hover {
+    transform: scale(1.02);
+  }
+
+  /*-------------------------*/
+  /* ACT區塊_基礎樣式
+    ---------------------------*/
+
+  .vspc .main .ACT {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: calc(845/ 1138 * 100%);
+    left: 0;
+    padding: 0px 10px;
+    z-index: 60;
+    /* background-color: rgb(52, 12, 226); */
+  }
+
+  /* 清除浮動 */
+  .vspc .main .ACT:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    clear: both;
+  }
+
+  .vspc .main .ACT>li {
+    display: block;
+    float: left;
+    height: auto;
+    position: relative;
+    /* background-color: #c3191f; */
+  }
+
+  /* ACT區塊_靜態樣式
+    ---------------------------*/
+
+  .vspc .main .ACT>li:nth-child(1) {
+    transition: all .3s;
+  }
+
+  .vspc .main .ACT>li:nth-child(2) {
+    width: calc(286/1170*100%);
+    transition: all .3s;
+    /* 間距調整 */
+    margin-left: calc(20/1170*100%);
+    margin-right: calc(3/1170*100%);
+  }
+
+  .vspc .main .ACT>li:nth-child(3) {
+    width: calc(286/1170*100%);
+    transition: all .3s;
+  }
+
+  /* ACT區塊_hover樣式
+    ---------------------------*/
+
+  .vspc .main .ACT>li:nth-child(1):hover,
+  .vspc .main .ACT>li:nth-child(2):hover,
+  .vspc .main .ACT>li:nth-child(3):hover {
+    transform: translateY(-10px);
+    filter: brightness(1.2);
+  }
+
+  /* ACT區塊_靜態樣式_a
+    ---------------------------*/
+
+  .vspc .main .ACT>li>a {
+    display: block;
+    width: 100%;
+    height: 0;
+    background-size: 100% auto;
+    background-position: center top;
+  }
+
+  .vspc .main .ACT>li:nth-child(2)>a {
+    padding-bottom: calc(145/286*100%);
+    background-image: url(./images/prize02.png?v005);
+  }
+
+  .vspc .main .ACT>li:nth-child(3)>a {
+    padding-bottom: calc(145/286*100%);
+    background-image: url(./images/prize03.png?v005);
+  }
+
+  /* ACT區塊_輪播樣式_li(1)
+    ---------------------------*/
+
+  .vspc .main .ACT>li:nth-child(1) {
+    width: calc(575/1170*100%);
+    /* 區塊寬度 */
+    height: 0;
+    padding-top: calc(145 / 1170 * 100%);
+    background-image: url(./images/prize01.png?v005);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .vspc .swiper-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .vspc .swiper-button-prev,
+  .vspc .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    width: 16px;
+    height: 24px;
+    z-index: 10;
+    cursor: pointer;
+    margin-top: 0;
+    background-size: 16px 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+  }
+
+  .vspc .swiper-button-prev,
+  .vspc .swiper-container-rtl .swiper-button-next {
+    /* background-image: url(""); */
+    left: 50px;
+  }
+
+  .vspc .swiper-button-next,
+  .vspc .swiper-container-rtl .swiper-button-prev {
+    /* background-image: url(""); */
+    right: 50px;
+  }
+
+  .vspc .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #ffff00;
+  }
+
+  .vspc .swiper-pagination-fraction,
+  .vspc .swiper-pagination-custom,
+  .vspc .swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 2.5%;
+  }
+
+  /*-------------------------*/
+  /* pavilion區塊_基礎樣式
+    ---------------------------*/
+
+  .vspc .main .pavilion {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: calc(995/ 1138 * 100%);
+    left: 0;
+    padding: 0px 10px;
+    z-index: 60;
+    /* background-color: rgb(52, 12, 226); */
+  }
+
+  /* 清除浮動 */
+  .vspc .main .pavilion:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    clear: both;
+  }
+
+  .vspc .main .pavilion>li {
+    display: block;
+    float: left;
+    height: auto;
+    position: relative;
+    /* background-color: #c3191f; */
+  }
+
+  /* pavilion區塊_靜態樣式
+    ---------------------------*/
+
+  .vspc .main .pavilion>li:nth-child(1) {
+    width: calc(286/1170*100%);
+    transition: all .3s;
+  }
+
+  .vspc .main .pavilion>li:nth-child(2) {
+    width: calc(286/1170*100%);
+    transition: all .3s;
+    margin-left: calc(3/1170*100%);
+  }
+
+  .vspc .main .pavilion>li:nth-child(3) {
+    width: calc(286/1170*100%);
+    transition: all .3s;
+    margin-left: calc(20/1170*100%);
+  }
+
+  .vspc .main .pavilion>li:nth-child(4) {
+    width: calc(286/1170*100%);
+    transition: all .3s;
+    margin-left: calc(3/1170*100%);
+  }
+
+  /* pavilion區塊_hover樣式
+    ---------------------------*/
+
+  .vspc .main .pavilion>li:nth-child(1):hover,
+  .vspc .main .pavilion>li:nth-child(2):hover,
+  .vspc .main .pavilion>li:nth-child(3):hover,
+  .vspc .main .pavilion>li:nth-child(4):hover {
+    transform: translateY(0px);
+    filter: brightness(1.2);
+  }
+
+  /* pavilion區塊_靜態樣式_a
+    ---------------------------*/
+
+  .vspc .main .pavilion>li>a {
+    display: block;
+    width: 100%;
+    height: 0;
+    background-size: 100% auto;
+    background-position: center top;
+  }
+
+  .vspc .main .pavilion>li:nth-child(1)>a {
+    padding-bottom: calc(145/286*100%);
+    background-image: url(./images/pavilion01.png?v005);
+  }
+
+  .vspc .main .pavilion>li:nth-child(2)>a {
+    padding-bottom: calc(145/286*100%);
+    background-image: url(./images/pavilion02.png?v005);
+  }
+
+  .vspc .main .pavilion>li:nth-child(3)>a {
+    padding-bottom: calc(145/286*100%);
+    background-image: url(./images/pavilion03.png?v005);
+  }
+
+  .vspc .main .pavilion>li:nth-child(4)>a {
+    padding-bottom: calc(145/286*100%);
+    background-image: url(./images/pavilion04.png?v005);
+  }
+
+  /*-------------------------*/
+  /* product區塊_樣式
+    ---------------------------*/
+
+  .vspc .product-container,
+  .vspc .pc {
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* pc + mob_樣式
+    ---------------------------*/
+
+  .vspc .mob {
+    display: none;
+  }
+
+  .vspc .pc {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* product-container_樣式
+    ---------------------------*/
+
+  .vspc .product-container {
+    width: 100%;
+    height: 0;
+    background-image: url(./images/bg_1190_product-container.jpg?v005);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 112.227% 0;
+    /* 必填  請填入product-container高度 */
+    position: relative;
+    /* background-color: #6911ce; */
+  }
+
+  /* 商品區*/
+  .vspc .product02,
+  .vspc .product03,
+  .vspc .product04,
+  .vspc .product05,
+  .vspc .product06,
+  .vspc .product07 {
+    position: absolute;
+    z-index: 51;
+    transform: scale(1);
+    /* transition: all .3s; */
+    opacity: 1;
+  }
+
+  .vspc .product02:hover,
+  .vspc .product03:hover,
+  .vspc .product04:hover,
+  .vspc .product05:hover,
+  .vspc .product06:hover,
+  .vspc .product07:hover {
+    transform: scale(1);
+  }
+
+  .vspc .product02 {
+    width: calc(932/ 1190 * 100%);
+    height: 0;
+    padding-top: calc(831 / 1190 * 100%);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: 0;
+    left: -17.99%;
+    z-index: 51;
+    /* animation: fadeInLeft 1s .3s forwards; */
+  }
+
+  .vspc .product03 {
+    width: calc(667/ 1190 * 100%);
+    height: 0;
+    padding-top: calc(639 / 1190 * 100%);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: 0;
+    left: 45.38%;
+    z-index: 52;
+    /* animation: fadeInRight 1s .6s forwards; */
+  }
+
+  .vspc .product04 {
+    width: calc(971/ 1190 * 100%);
+    height: 0;
+    padding-top: calc(740 / 1190 * 100%);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: calc(935 / 2671 * 100%);
+    left: -19.25%;
+    z-index: 52;
+    /* animation: fadeInLeft 1s 1.2s forwards */
+  }
+
+  .vspc .product05 {
+    width: calc(843/ 1190 * 100%);
+    height: 0;
+    padding-top: calc(651 / 1190 * 100%);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: calc(645 / 2671 * 100%);
+    left: 40.93%;
+    z-index: 53;
+  }
+
+  .fadeInRight--waved {
+    animation: fadeInRight 1s 0.5s forwards,
+      wave 9s 1.6s infinite linear;
+  }
+
+  .vspc .product06 {
+    width: calc(1063/ 1190 * 100%);
+    height: 0;
+    padding-top: calc(794 / 1190 * 100%);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: calc(1821 / 2671 * 100%);
+    left: -9.58%;
+    z-index: 50;
+
+  }
+
+  .fadeInLeft--waved {
+    animation: fadeInLeft 1s 0.5s forwards,
+      wave 9s 1.6s infinite linear;
+  }
+
+  .vspc .product07 {
+    width: calc(1040/ 1190 * 100%);
+    height: 0;
+    padding-top: calc(863 / 1190 * 100%);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: calc(1361 / 2671 * 100%);
+    left: 37.65%;
+    z-index: 51;
+    /* animation: fadeInRight 1s 1.3s forwards; */
+  }
+
+  .vspc .product01>img,
+  .vspc .product02>img,
+  .vspc .product03>img,
+  .vspc .product04>img,
+  .vspc .product05>img,
+  .vspc .product06>img,
+  .vspc .product07>img,
+  .vspc .product08>img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  /*大象*/
+  .mammoth {
+    width: calc(345/ 1190 * 100%);
+    height: 0;
+    padding-top: calc(399 / 1190 * 100%);
+    background-image: url(./images/mammoth.png?v005);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    left: -29.0%;
+    bottom: 0;
+    z-index: 58;
+  }
+
+  /*-------------------------*/
+  /* 視差背景_樣式
+    ---------------------------*/
+
+  .rellax_bg {
+    max-width: 1920px;
+    position: fixed;
+    top: 0;
+    left: calc(50% - 960px);
+    z-index: 1;
+  }
+
+  .rock {
+    max-width: 1190px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .rock img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+  }
+
+  .rock_img {
+    left: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* =====================================================================================
+........................................mobile版.......................................
+=======================================================================================*/
+
+  @media screen and (max-width: 640px) {
+
+    /*-------------------------*/
+    /* 基礎設定_樣式
+        ---------------------------*/
+
+    html,
+    body {
+      background-color: #37b5fd;
+
+    }
+
+    .vspc_bg {
+      background-image: none;
+    }
+
+    /*-------------------------*/
+    /* vspc區塊_樣式
+        ---------------------------*/
+
+    .vspc {
+      width: 100%;
+      max-width: 640px;
+    }
+
+    /*-------------------------*/
+    /* main區塊_樣式 
+        ---------------------------*/
+
+    .vspc .main {
+      width: 100%;
+      height: auto;
+      background-image: none;
+      padding: 0;
+      display: block;
+      position: relative;
+    }
+
+    /* 視覺左上角活動LOGO_樣式
+        ---------------------------*/
+
+    .udnLOGO {
+      width: calc(120/640*100%);
+      left: 1%;
+      top: 1%;
+    }
+
+    .udnLOGO span {
+      padding-bottom: calc(293/797*100%);
+      background-imag./images/new_udnlogo_02.svg?v005);
+    }
+
+    /* 背景動態_樣式
+        ---------------------------*/
+
+    /*標背景*/
+    .vspc .main .title-bg {
+      width: 100%;
+      height: 0;
+      padding-top: calc(1131/640*100%);
+      background-image: url(./images/mob_01.jpg?v005);
+    }
+
+    /*標*/
+    .vspc .main .title {
+      width: calc(469/640*100%);
+      height: 0;
+      padding-top: calc(356/640*100%);
+      background-image: url(./images/mob-title.png?v005);
+      top: 0;
+      left: 12%;
+      z-index: 51;
+    }
+
+    /* 小冰台 */
+    .vspc .main .iceberg03 {
+      width: calc(397/640*100%);
+      height: 0;
+      padding-top: calc(161/640*100%);
+      background-image: url(./images/mob-iceberg03.png?v005);
+      top: calc(287 / 1736 * 100%);
+      left: 13.5%;
+      z-index: 52;
+    }
+
+    /* 冰台 */
+    .vspc .main .icicle {
+      width: calc(455/640*100%);
+      height: 0;
+      padding-top: calc(231/640*100%);
+      background-image: url(./images/mob-icicle.png?v005);
+      top: calc(283 / 1736 * 100%);
+      left: 3.2%;
+    }
+
+    /* 折價劵 */
+    .vspc .main .coupon02 {
+      width: calc(100/640*100%);
+      height: 0;
+      padding-top: calc(100/640*100%);
+      background-image: url(./images/mob-coupon02.png?v005);
+      top: calc(318 / 1736 * 100%);
+      top: 17%;
+      left: 36.72%;
+    }
+
+    /* 冰塊 */
+    .vspc .main .coupon01 {
+      width: calc(122/640*100%);
+      height: 0;
+      padding-top: calc(118/640*100%);
+      background-image: url(./images/mob-coupon01.png?v005);
+      top: calc(283 / 1736 * 100%);
+      left: 35.47%;
+    }
+
+    /* 按鈕 */
+    .vspc .main .button {
+      width: calc(170/640*100%);
+      height: 0;
+      padding-top: calc(63/640*100%);
+      background-image: url(./images/mob-button.png?v005);
+      top: calc(395 / 1736 * 100%);
+      left: 36.57%;
+      z-index: 61;
+    }
+
+    /* 主商品 */
+    .vspc .product01 {
+      width: calc(616/640*100%);
+      height: 0;
+      padding-top: calc(648/640*100%);
+      background-image: url(./images/mob-product01.png?v005);
+      top: calc(462 / 1736 * 100%);
+      left: 0.7%;
+      z-index: 60;
+    }
+
+    /* 原始人父親 */
+    .vspc .main .mob-people {
+      width: calc(118/640*100%);
+      height: 0;
+      padding-top: calc(291/640*100%);
+      background-image: url(./images/mob-people.png?v005);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      position: absolute;
+      top: calc(157 / 1736 * 100%);
+      left: 2.3%;
+      z-index: 58;
+    }
+
+    /*-------------------------*/
+    /* ACT區塊_基礎樣式
+        ---------------------------*/
+
+    .vspc .main .ACT {
+      width: 100%;
+      height: auto;
+      display: block;
+      position: inherit;
+      padding: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+    }
+
+
+    /* ACT區塊_靜態樣式
+        ---------------------------*/
+
+    .vspc .main .ACT>li:nth-child(1) {
+      width: calc(640/640*100%);
+      /* width: 50%; */
+      /* 等比 1/2 切版 請打開這素質 */
+    }
+
+    .vspc .main .ACT>li:nth-child(2) {
+      width: calc(320/640*100%);
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 50%;
+      /* 等比 1/2 切版 請打開這素質 */
+    }
+
+    .vspc .main .ACT>li:nth-child(3) {
+      width: calc(320/640*100%);
+      margin-left: 0px;
+      width: 50%;
+      /* 等比 1/2 切版 請打開這素質 */
+    }
+
+    /* ACT區塊_hover樣式 取消
+        ---------------------------*/
+
+    .vspc .main .ACT>li:nth-child(1):hover,
+    .vspc .main .ACT>li:nth-child(2):hover,
+    .vspc .main .ACT>li:nth-child(3):hover {
+      transform: translateY(0px);
+      filter: brightness(1);
+    }
+
+    /* ACT區塊_靜態樣式_a
+        ---------------------------*/
+
+    .vspc .main .ACT>li:nth-child(2)>a {
+      /* 不等比 請填入 高／寬＊100% */
+      padding-bottom: calc(154/320*100%);
+      background-image: url(./images/mob_03.jpg?v005);
+    }
+
+    .vspc .main .ACT>li:nth-child(3)>a {
+      /* 不等比 請填入 高／寬＊100% */
+      padding-bottom: calc(154/320*100%);
+      background-image: url(./images/mob_04.jpg?v005);
+    }
+
+    /* ACT區塊_輪播樣式_li(1)
+        ---------------------------*/
+
+    .vspc .main .ACT>li:nth-child(1) {
+      width: 100%;
+      height: 0;
+      padding-top: calc(154/640*100%);
+      background-image: url(./images/mob_02.jpg?v005);
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    .vspc .swiper-button-prev,
+    .vspc .swiper-button-next {
+      width: 17px;
+      height: 44px;
+      background-size: 17px 44px;
+    }
+
+    .vspc .swiper-button-prev,
+    .vspc .swiper-container-rtl .swiper-button-next {
+      /* background-image: url(""); */
+      left: 20px;
+    }
+
+    .vspc .swiper-button-next,
+    .vspc .swiper-container-rtl .swiper-button-prev {
+      /* background-image: url(""); */
+      right: 20px;
+    }
+
+    .vspc .swiper-pagination-fraction,
+    .vspc .swiper-pagination-custom,
+    .vspc .swiper-container-horizontal>.swiper-pagination-bullets {
+      bottom: 6.5%;
+    }
+
+    /*-------------------------*/
+    /* pavilion區塊_基礎樣式
+        ---------------------------*/
+    .vspc .main .pavilion {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      /* 必填換行 */
+      padding: 0px;
+      position: inherit;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+    }
+
+    /* pavilion區塊_靜態樣式
+        ---------------------------*/
+    .vspc .main .pavilion>li:nth-child(1) {
+      width: calc(320/640*100%);
+      width: 50%;
+      /* 等比 1/2 切版 請打開這素質 */
+    }
+
+    .vspc .main .pavilion>li:nth-child(2) {
+      width: calc(320/640*100%);
+      margin-left: 0px;
+      width: 50%;
+      /* 等比 1/2 切版 請打開這素質 */
+    }
+
+    .vspc .main .pavilion>li:nth-child(3) {
+      width: calc(320/640*100%);
+      margin-left: 0px;
+      width: 50%;
+      /* 等比 1/2 切版 請打開這素質 */
+    }
+
+    .vspc .main .pavilion>li:nth-child(4) {
+      width: calc(320/640*100%);
+      margin-left: 0px;
+      width: 50%;
+      /* 等比 1/2 切版 請打開這素質 */
+    }
+
+    /* pavilion區塊_hover樣式
+        ---------------------------*/
+    .vspc .main .pavilion>li:nth-child(1):hover,
+    .vspc .main .pavilion>li:nth-child(2):hover,
+    .vspc .main .pavilion>li:nth-child(3):hover,
+    .vspc .main .pavilion>li:nth-child(4):hover {
+      transform: translateY(0px);
+      filter: brightness(1);
+    }
+
+    /* pavilion區塊_靜態樣式_a
+        ---------------------------*/
+    .vspc .main .pavilion>li:nth-child(1)>a {
+      /* 不等比 請填入 高／寬＊100% */
+      padding-bottom: calc(153/320*100%);
+      background-image: url(./images/mob_05.jpg?v005);
+    }
+
+    .vspc .main .pavilion>li:nth-child(2)>a {
+      /* 不等比 請填入 高／寬＊100% */
+      padding-bottom: calc(153/320*100%);
+      background-image: url(./images/mob_06.jpg?v005);
+    }
+
+    .vspc .main .pavilion>li:nth-child(3)>a {
+      /* 不等比 請填入 高／寬＊100% */
+      padding-bottom: calc(144/320*100%);
+      background-image: url(./images/mob_07.jpg?v005);
+    }
+
+    .vspc .main .pavilion>li:nth-child(4)>a {
+      /* 不等比 請填入 高／寬＊100% */
+      padding-bottom: calc(144/320*100%);
+      background-image: url(./images/mob_08.jpg?v005);
+    }
+
+    /*-------------------------*/
+    /* product區塊_樣式
+        ---------------------------*/
+
+    .vspc .product-container {
+      /* padding: 332.58% 0; */
+      padding: 0;
+      height: auto;
+      background-image: none;
+    }
+
+
+    .vspc .mob,
+    .vspc .mob a,
+    .vspc .mob a img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+
+    /* pc + mob_樣式
+        ---------------------------*/
+
+    .vspc .pc {
+      display: none;
+    }
+
+    .vspc .mob {
+      display: block;
+      z-index: 50;
+    }
+
+    .vspc .product01:hover {
+      transform: scale(1);
+    }
+
+    .vspc .sn_outter {
+      display: block;
+      max-width: 640px;
+      position: absolute;
+      width: calc(100vw - 60%);
+      height: 25px;
+      top: 10%;
+      left: 45%;
+      text-align: left;
+      z-index: 56;
+    }
+
+    .vspc .sn_outter .serial_number {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      color: #e32f26;
+      font-weight: bold;
+      z-index: 56;
+    }
+
+    /*-------------------------*/
+    /* 視差背景_樣式
+        ---------------------------*/
+
+    .rellax_bg {
+      position: fixed;
+      top: 0;
+      left: calc(50% - 920px);
+      z-index: 1;
+      display: none;
+      opacity: 0;
+    }
+
+    /*-------------------------*/
+    /* mobile版_消失樣式
+        ---------------------------*/
+
+    .vspc .main .saber-tiger,
+    .vspc .main .mammoth,
+    .vspc .main .coupon01>img,
+    .topbelt-fix,
+    .vspc .footer {
+      display: none;
+    }
+
+    /*-------------------------*/
+    /* mobile版--斷點樣式
+        ---------------------------*/
+
+    @media screen and (max-width: 414px) {
+      .vspc .arrow {
+        top: 79%;
+        left: 45%;
+      }
+
+      .vspc .sn_outter .serial_number {
+        font-size: 24px;
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      .vspc .arrow {
+        width: 32px;
+        top: 80%;
+        left: 46%;
+      }
+
+      .vspc .sn_outter .serial_number {
+        font-size: 20px;
+      }
+    }
+  }
+
+</style>
+<!-- 活動樣式結束-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =====================================================================================
+........................................DOM_主體架構 .......................................
+=======================================================================================-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- JQ主程式 -->
+
+<!-- imageMap RWD開始 -->
+<script src="./js/jquery.rwdImageMaps.min.js?v005"></script>
+<script>
+  $(function () {
+    $('img[usemap]').rwdImageMaps();
+  });
+</script>
+<!-- imageMap RWD結束 -->
+
+<!-- 滾動視差外掛 -->
+<!-- <script src="https://img.udn.com/art/js_temp/rellax.js?v005"></script> -->
+
+<!-- 水平視差外掛 -->
+<!-- <script src="https://img.udn.com/art/js_temp/parallax.min.js?v005"></script> -->
+
+<!-- wow外掛 -->
+<script src="./js/wow.min.js?v005"></script>
+
+<!-- skrollr外掛 -->
+<script type="text/javascript" src="./js/skrollr.min.js?v005"></script>
+
+<!-- Boom外掛 -->
+<script type="text/javascript" src="./js/Boom.js"></script>
+
+<!-- 自定義js -->
+<script src="./js/custom.js?v005"></script>
+
+
+<!--輪播套件-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<script>
+  $(document).ready(function () {
+
+    // swiper
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        prevEl: ".swiper-button-prev", // 上一頁按鈕物件
+        nextEl: ".swiper-button-next", // 下一頁按鈕物件
+      },
+    });
+
+    // boom
+    if (screen.width > 768){
+    $('.button').on('mouseenter', function (event) {
+        boom($('.coupon01 > img'), {
+          // 缩放值
+          'scaleLevel': 2,
+          // 模糊值
+          'blurLevel': 0,
+          // 弹射距离 
+          'boomLevel': 1,
+          // 爆炸时长
+          'boomTime': 1500,
+          // 是否打开日志
+          'isOpenLog': true
+        });
+      });
+    }
+    if (screen.width < 640) {
+      boom($('.coupon01 > img').off());
+    }
+
+  });
+
+  $(window).resize(function () {
+    if ($(window).width() < 640)
+    {
+      $('#change-img01').attr("src", "./images/mob-prize01-bank01.png?v005");
+      $('#change-img02').attr("src", "./images/mob-prize01-bank02.png?v005");
+      $('#change-img03').attr("src", "./images/mob-prize01-bank03.png?v005");
+      $('#change-img04').attr("src", "./images/mob-prize01-bank04.png?v005");
+      $('#change-img05').attr("src", "./images/mob-prize01-bank05.png?v005");
+    };
+    if (screen.width > 1024){
+      var s = skrollr.init();
+    };
+  });
+</script>
+<!--輪播套件end-->
+
+
+<!-- 滾動語法錨點 -->
+<a id="PageTop" name="PageTop"></a>
+
+<div class="vspc_bg">
+
+  <!-- 主視覺開始 -------------------------->
+  <div class="vspc">
+
+    <!-- main區塊_start -->
+    <div class="main">
+
+      <!-- LOGO -->
+      <a href="https://shopping.udn.com/mall/Cc1a00.do" target="_blank" class="udnLOGO"><span></span></a>
+
+
+      <!-- desktop-背景動態 -->
+      <div class="icicle"></div>
+      <div class="coupon02"></div>
+      <div class="coupon01">
+        <img src="./images/coupon01.png?v005" alt="">
+      </div>
+      <div class="saber-tiger"></div>
+
+      <!-- mobile-背景動態 -->
+      <div class="title-bg"></div>
+      <div class="mob-people"></div>
+
+      <!-- 主標 -->
+      <div class="title"></div>
+      <div class="iceberg03"></div>
+
+      <!-- 天天領萬元折價券  -->
+      <a href="javascript:;" class="button"></a>
+
+
+      <!-- 主商品 -->
+      <a class="product01" href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=T_005_002_008"></a>
+
+
+      <!-- 鋪底_輪播 -->
+      <ul class="ACT">
+        <li>
+          <!-- 銀行start-->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=288808082rdbe7RicAb"
+                  target="_blank">
+                  <img id="change-img01" src="./images/prize01-bank01.png?v005" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=288808082rdbe7RicAb"
+                  target="_blank">
+                  <img id="change-img02" src="./images/prize01-bank02.png?v005" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=288808082rdbe7RicAb"
+                  target="_blank">
+                  <img id="change-img03" src="./images/prize01-bank03.png?v005" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=288808082rdbe7RicAb"
+                  target="_blank">
+                  <img id="change-img04" src="./images/prize01-bank04.png?v005" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=288808082rdbe7RicAb"
+                  target="_blank">
+                  <img id="change-img05" src="./images/prize01-bank05.png?v005" alt="">
+                </a>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 上/下一頁按鈕 -->
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+
+          </div>
+          <!-- 銀行end -->
+        </li>
+        <li>
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=201802012nLAxoOUwjB"></a>
+        </li>
+        <li>
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=20990722220jLCqziZJJ"></a>
+        </li>
+      </ul>
+      <!-- 鋪底_輪播end -->
+
+
+      <!-- 館內_活動 -->
+      <ul class="pavilion">
+        <li>
+          <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=E_001_002_008"></a>
+        </li>
+        <li>
+          <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=F_004_013_018"></a>
+        </li>
+        <li>
+          <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=G_001_002_014"></a>
+        </li>
+        <li>
+          <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=T_001_015_001_001"></a>
+        </li>
+      </ul>
+      <!-- 館內_活動 -->
+
+    </div>
+    <!-- main區塊_end -->
+
+    <!-- pc + mob 商品區塊_start -->
+    <div class="product-container">
+
+      <!-- 商品區 1-8品 -->
+      <!-- pc -->
+      <div class="pc">
+
+        <a class="product02" href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=T_006_001_001"
+          data-0="transform:translateX(-42.02%);" data-700="transform:translateX(0px);"
+          style="transform: translateX(0px);">
+          <img src="./images/product02.png?v005" alt="Dyson空氣清淨機">
+        </a>
+
+        <a class="product03" href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=H_005_003_005"
+          data-0="transform:translateX(42.02%);" data-700="transform:translateX(0px);"
+          style="transform: translateX(0px);">
+          <img src="./images/product03.png?v005" alt="丹麥 VAGNBYS">
+        </a>
+
+        <a class="product04" href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=E_001_003_022"
+          data-0="transform:translateX(-42.02%);" data-1800="transform:translateX(0px);"
+          style="transform: translateX(0px);">
+          <img src="./images/product04.png?v005" alt="ASUS Zenbook">
+        </a>
+
+        <a class="product05" href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=F_002_007_013"
+          data-0="transform:translateX(42.02%);" data-1800="transform:translateX(0px);"
+          style="transform: translateX(0px);">
+          <img src="./images/product05.png?v005" alt="Canon EOS RP">
+        </a>
+
+        <a class="product06" href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=Q_001_001_021"
+          data-0="transform:translateX(-42.02%);" data-2500="transform:translateX(0px);"
+          style="transform: translateX(0px);">
+          <img src="./images/product06.png?v005" alt="Apple iPhone XR">
+        </a>
+
+        <a class="product07" href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=R_001_005_005"
+          data-0="transform:translateX(42.02%);" data-2500="transform:translateX(0px);"
+          style="transform: translateX(0px);">
+          <img src="./images/product07.png?v005" alt="YAMAHA新勁戰">
+        </a>
+
+        <!-- 大象 -->
+        <div class="mammoth"></div>
+      </div>
+
+      <!-- mobile -->
+      <div class="mob">
+        <div>
+          <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=T_006_001_001">
+            <img src="./images/mob_09.jpg?v005" border="0" alt="Dyson空氣清淨機" />
+          </a>
+        </div>
+
+        <div>
+          <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=H_005_003_005">
+            <img src="./images/mob_10.jpg?v005" border="0" alt="丹麥 VAGNBYS" />
+          </a>
+        </div>
+
+        <div>
+          <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=E_001_003_022">
+            <img src="./images/mob_11.jpg?v005" border="0" alt="ASUS Zenbook" />
+          </a>
+        </div>
+
+        <div>
+          <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=F_002_007_013">
+            <img src="./images/mob_12.jpg?v005" border="0" alt="Canon EOS RP" />
+          </a>
+        </div>
+
+        <div>
+          <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=Q_001_001_021">
+            <img src="./images/mob_13.jpg?v005" border="0" alt="Apple iPhone XR" />
+          </a>
+        </div>
+
+        <div>
+          <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=R_001_005_005">
+            <img src="./images/mob_14.jpg?v005" border="0" alt="YAMAHA新勁戰" />
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <!-- pc + mob 商品區塊_end -->
+
+  </div>
+  <!-- 主視覺結束 -------------------------->
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =====================================================================================
+........................................DOM_側欄架構 .......................................
+=======================================================================================-->
+
+
+<!-- PC區塊_側欄開始 -->
+<style>
+  .sbar * {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+    list-style: none;
+    box-sizing: content-box !important;
+  }
+
+  /* 修正後台 */
+  .rwd03_sbar * {
+    box-sizing: content-box !important;
+  }
+
+  .sbar {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: "Century Gothic", "Microsoft JhengHei", 'Microsoft JhengHei UI Regular', '微軟正黑體 Light', '微軟正黑體', sans-serif;
+    text-align: center;
+    position: fixed;
+    overflow: hidden;
+    z-index: 999;
+    width: 160px;
+    /* PC區塊側欄_寬，依圖寬填入 */
+    height: 680px;
+    /* PC區塊側欄_高,依圖高填入 */
+    top: 5vh;
+    /* PC區塊側欄_離上方距離 */
+    left: 0;
+    /* PC區塊側欄_離右方距離 */
+    transition: all .3s;
+    /* top: 150px; */
+    /* 套HEADER時需要打開 */
+  }
+
+  .sbar>ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .sbar>ul>li {
+    display: block;
+    position: absolute;
+    color: #000;
+  }
+
+  /* 圖框 */
+  .sbar>ul>.img_box {
+    width: 160px;
+  }
+
+  .sbar>ul>.img_box a {
+    width: 100%;
+    display: block;
+  }
+
+  .sbar>ul>.img_box img {
+    display: block;
+  }
+
+  .sbar>ul>li.sleft {
+    width: 130px;
+    height: auto;
+  }
+
+  /* 左選單 */
+  .sbar>ul>li.sleft .sleft_menu {
+    width: 100%;
+    height: auto;
+    background-color: rgba(214, 11, 11, 0.8);
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border-radius: 0px 0px 80px 80px;
+    /* border-radius: 80px 80px 80px 80px; */
+  }
+
+  .sbar>ul>li.sleft .sleft_menu .sleft_item {
+    width: 120px;
+    height: 27px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px dashed #fff;
+  }
+
+  /* 數字顏色 */
+  .sbar>ul>li.sleft .sleft_menu .sleft_item span {
+    color: #ffff00;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+
+  /* 字體顏色 */
+  .sbar>ul>li.sleft .sleft_menu .sleft_item a {
+    width: 100%;
+    height: 100%;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  /* 滑動換色 */
+  .sbar>ul>li.sleft .sleft_menu .sleft_item a:hover,
+  .sbar>ul>li.sleft .sleft_menu .sleft_item a:hover span {
+    color: #000;
+  }
+
+  /* 上圓 */
+  .sbar>ul>li.sleft .sleft_menu .sleft_first {
+    width: 130px;
+    height: 27px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 15px;
+    position: relative;
+  }
+
+  /* 下圓 */
+  .sbar>ul>li.sleft .sleft_menu .sleft_footer {
+    width: 130px;
+    height: 27px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 15px;
+    position: relative;
+  }
+
+  .sbar>ul>li.sleft .sleft_menu .sleft_footer a {
+    width: 100%;
+    height: 100%;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-decoration: none;
+  }
+
+  .sbar>ul>li.sleft .sleft_menu .sleft_footer:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 0 5px 8px 5px;
+    border-style: solid;
+    position: absolute;
+    top: 10px;
+    left: 44%;
+    border-color: transparent transparent #fff transparent;
+  }
+
+  /* 右選單 */
+  .sbar>ul>li.sright {
+    width: 30px;
+    cursor: pointer;
+    padding-top: 20px;
+    color: #fff;
+    background-color: rgb(10, 1, 1);
+    line-height: 30px;
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    left: 130px;
+  }
+
+  .sbar>ul>li.sright>span {
+    display: block;
+  }
+
+  .sbarleft {
+    left: -130px;
+  }
+
+  .sbarTop {
+    top: 5vh;
+  }
+
+  @media screen and (max-width: 960px) {
+    .sbar {
+      display: none;
+    }
+  }
+
+</style>
+
+<script>
+  $(function () {
+
+    var WW = $(window).width();
+    if (WW < 1510)
+    {
+      $(".sbar").addClass("sbarleft");
+    } else
+    {
+      $(".sbar").removeClass("sbarleft");
+    }
+    $(".sright").click(function () {
+      $(".sbar").toggleClass('sbarleft');;
+    });
+    $(window).resize(function () {
+      var WW = $(window).width();
+      if (WW < 1510)
+      {
+        $(".sbar").addClass("sbarleft");
+      } else
+      {
+        $(".sbar").removeClass("sbarleft");
+      }
+    });
+    $(window).scroll(function () {
+      var HH = $(window).scrollTop();
+      if (HH > 80)
+      {
+        $(".sbar").addClass("sbarTop");
+      } else
+      {
+        $(".sbar").removeClass("sbarTop");
+      }
+
+      if (HH > 900)
+      {
+        $(".topback-mob").stop().animate({
+          opacity: '1'
+        }, 500);
+      } else
+      {
+        $(".topback-mob").stop().animate({
+          opacity: '0'
+        }, 500);
+      }
+    });
+    $("#backtop").click(function () {
+      // $(window).scrollTop(0);
+      $("html,body").stop().animate({
+        scrollTop: 0
+      }, 800);
+    });
+    $(".topback-mob").click(function () {
+      $("html,body").stop().animate({
+        scrollTop: 0
+      }, 800);
+    });
+
+
+    $('.js-tabs').on('click', function (e) {
+      e.preventDefault();
+      let idx = $(this).find('a').data('value');
+
+      $(".popupMenu").removeClass('menuTop');
+      $(".popupMenuBG").toggleClass('popupMenuBG-active');
+
+      $(this).toggleClass('active');
+      $(this).siblings().removeClass('active');
+
+      $(this).find('.fa').toggleClass('fa-xl');
+      $(this).siblings().find('.fa').removeClass('fa-xl');
+
+
+      if ($(".js-tabs").hasClass("active") === true)
+      {
+        $(".popupMenuBG").addClass('popupMenuBG-active');
+        $("body").addClass('fixBody');
+        $('.content' + idx).addClass('menuTop');
+      }
+      else
+      {
+        $("body").removeClass('fixBody');
+        $(".fa").removeClass("fa-xl");
+      }
+    });
+
+    function remove() {
+      $(".popupMenu").removeClass('menuTop');
+      $(".popupMenuBG").removeClass('popupMenuBG-active');
+      $("body").removeClass('fixBody');
+      $(".js-tabs").removeClass('active');
+      $(".fa").removeClass("fa-xl");
+    };
+
+    $(".popupMenuBG , .js-link").click(function () {
+      remove();
+    });
+
+
+  });
+</script>
+
+
+<div class="sbar">
+  <ul>
+    <!-- 主會場圖示與連結 -->
+    <div class="img_box">
+      <!-- 寬160px 高150px -->
+      <img src="./images/img.png" alt="回活動主頁" title="回活動主頁">
+    </div>
+    <li class="sleft">
+      <!-- 子選單 -->
+      <ul class="sleft_menu">
+        <!-- <div class="sleft_first">
+                    <a href="javascript:void(0)"></a>
+                </div> -->
+        <li class="sleft_item">
+          <a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=202810151Cc9OjEo1hC">
+            活動主場
+          </a>
+        </li>
+        <li class="sleft_item">
+          <a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=201802012nLAxoOUwjB">
+            新客<span class="font-color">800</span>
+          </a>
+        </li>
+        <li class="sleft_item">
+          <a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=209907225feUe8RE5Sz">
+            3C開學<span class="font-color">95</span>折
+          </a>
+        </li>
+        <li class="sleft_item">
+          <a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=22190211176bY9tQCL1">
+            甩油腰瘦<span class="font-color">85</span>折
+          </a>
+        </li>
+        <li class="sleft_item">
+          <a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=202902112PBmkz89ZWv">
+            限量神劵<span class="font-color">7</span>折
+          </a>
+        </li>
+        <li class="sleft_item">
+          <a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=288808082rdbe7RicAb">
+            抽來回<span class="font-color">機票</span>
+          </a>
+        </li>
+        <!-- 第二排 -->
+        <li class="sleft_item">
+          <a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=220202142dC1EDRFmKN">
+            手機電玩<span class="font-color">85</span>折
+          </a>
+        </li>
+        <li class="sleft_item">
+          <a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=220202142dC1EDRFmKN">
+            汽車機車<span class="font-color">85</span>折
+          </a>
+        </li>
+        <li class="sleft_item">
+          <a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=220202142dC1EDRFmKN">
+            廚衛照明<span class="font-color">85</span>折
+          </a>
+        </li>
+        <li class="sleft_item">
+          <a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=220202142dC1EDRFmKN">
+            3Ｃ周邊<span class="font-color">85</span>折
+          </a>
+        </li>
+        <li class="sleft_item">
+          <a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=220202142dC1EDRFmKN">
+            生活百貨<span class="font-color">85</span>折
+          </a>
+        </li>
+        <li class="sleft_item">
+          <a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=220202142dC1EDRFmKN">
+            時尚精品<span class="font-color">8</span>折
+          </a>
+        </li>
+        <!-- backtop -->
+        <div class="sleft_footer">
+          <a href="javascript:void(0)" id="backtop">Top</a>
+        </div>
+      </ul>
+    </li>
+    <li class="sright">更多促銷<span>◄</span></li>
+  </ul>
+</div>
+<!-- PC區塊_側欄結束 -->
+
+
+
+<!-- MOBILE區塊_下方選單開始 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  .bbar {
+    display: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: "Century Gothic", "Microsoft JhengHei", 'Microsoft JhengHei UI Regular', '微軟正黑體 Light', '微軟正黑體', sans-serif;
+    position: fixed;
+    z-index: 9999;
+    width: 100vw;
+    bottom: 0;
+  }
+
+  .bbar_menu {
+    width: 100%;
+    /* height: calc(90vw / 640 * 100); */
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .bbar_menu li {
+    width: calc(100vw/4);
+    /* MO2BILE區塊下方選單_數量,有幾個就除幾個(目前4) */
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px dashed #ccc;
+    padding: 2px;
+    /* overflow: hidden; */
+  }
+
+  .bbar_menu>li:last-child {
+    border-right: none;
+  }
+
+  .bbar_item>a {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-decoration: none;
+    width: 100%;
+    color: #e5e5e5;
+    display: block;
+    text-align: center;
+  }
+
+  .bbar_item .fa {
+    /* default */
+    font-family: FontAwesome !important;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 50%;
+    color: #ffffff;
+    transform: translateY(0) scale(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0px 0px 0px #81020bc7;
+    transition: all .1s;
+  }
+
+  .fa.fa-xl {
+    width: 24px;
+    height: 24px;
+    transform: translateY(-8px) scale(1.4);
+    background-color: #37b5fd;
+    border: 1.5px solid #fcdc89;
+    box-shadow: 0px 2px 3px #81020bc7;
+  }
+
+  .bbar_item>a p {
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .bbar_item span {
+    font-family: "Century Gothic", "Microsoft JhengHei", 'Microsoft JhengHei UI Regular', '微軟正黑體 Light', '微軟正黑體', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .popupMenuBG {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.0);
+    z-index: -1;
+    visibility: hidden;
+  }
+
+  .popupMenuBG-active {
+    background: rgba(86, 86, 86, 0.85);
+    visibility: visible;
+  }
+
+  .popupMenu {
+    width: 100%;
+    padding: 20px 10px 15px 10px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    opacity: 0;
+    transition: all .3s;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .menuTop {
+    bottom: 50px;
+    opacity: 1;
+  }
+
+  .fixBody {
+    position: fixed;
+    width: 100%;
+  }
+
+  .popupMenu__row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .popupMenu__row li {
+    flex-basis: 32%;
+    max-height: 31px;
+    box-sizing: border-box;
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 2px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 0 2px;
+    transition: all .3s;
+  }
+
+  /* topback-mob */
+  .topback-mob {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #565656;
+    top: -60px;
+    right: 1.5vw;
+    z-index: 999;
+    opacity: 0;
+  }
+
+  .topback-mob::before {
+    content: "▲";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+  }
+
+  .text-black {
+    color: #000 !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    .bbar {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 540px) {
+    .popupMenu__row {
+      justify-content: center;
+    }
+  }
+
+  /* -----------------------------修改色碼-------------------------------------- */
+
+
+  /*-------------------------*/
+  /* 選單
+/*-------------------------*/
+
+  /* 背景顏色 */
+  .bbar_menu {
+    border-top: 2px solid #0ed2f5;
+    background: -moz-linear-gradient(top, #05a7dd 0%, #06e2f1 99%);
+    background: -webkit-linear-gradient(top, #05a7dd 0%, #06e2f1 99%);
+    background: linear-gradient(to top, #05a7dd 0%, #06e2f1 99%);
+  }
+
+  /* 單區塊顏色 */
+  /* .bbar_menu>li.bbar-bg01 {
+			background-color: rgba(0, 0, 0, 0.4);
+	} */
+  /* .bbar_menu>li.bbar-bg02 {
+			background-color: rgba(245, 102, 7, 0.4);
+	} */
+  /* 單區塊 active 顏色  */
+  .bbar_menu>li.active {
+    background-color: #0a9df3;
+  }
+
+  /* 看更多文字顏色 */
+  .bbar_item span {
+    color: #f5e508;
+  }
+
+  /*-------------------------*/
+  /* 子選單
+/*-------------------------*/
+
+  /* 背景顏色 */
+  .popupMenu {
+    background-color: #0a9df3;
+    border-top: 1px solid #fcdc89;
+  }
+
+  /* tab顏色 */
+  .popupMenu__row li {
+    background-color: #ffffff;
+  }
+
+
+
+
+
+
+
+  /* -----------------------------修改色碼-------------------------------------- */
+
+</style>
+
+<div class="bbar">
+  <ul class="bbar_menu">
+    <!-- MOBILE區塊下方選單_數量,有幾個就開幾排<a>(目前4) -->
+
+    <!-- 連結 -->
+    <li class="bbar_item bbar-bg01 js-link">
+      <a data-value="1"
+        href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=221905143Z55qDiEcrT">
+        <p>點我<br><span>領萬元</span></p>
+      </a>
+    </li>
+
+    <!-- click -->
+    <li class="bbar_item bbar-bg02 js-tabs">
+      <a data-value="2" href="javascript:;">
+        <i class="fa fa-bell-o" aria-hidden="true"></i>
+        <p>強檔活動</p>
+      </a>
+    </li>
+    <li class="bbar_item bbar-bg01 js-tabs">
+      <a data-value="3" href="javascript:;">
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <p>品類活動</p>
+      </a>
+    </li>
+    <li class="bbar_item bbar-bg02 js-tabs">
+      <a data-value="4" href="javascript:;">
+        <i class="fa fa-heart-o" aria-hidden="true"></i>
+        <p>熱門活動</p>
+      </a>
+    </li>
+
+  </ul>
+  <!-- 子選單 -->
+  <div class="popupMenuBG">
+    <!-- 第二格選單 -->
+    <ul class="popupMenu content2">
+      <!-- popupMenu__row 一排 最多3個頁簽 -->
+      <div class="popupMenu__row">
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購02</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購02</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購02</p>
+          </a>
+        </li>
+      </div>
+      <div class="popupMenu__row">
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購02</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購02</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購02</p>
+          </a>
+        </li>
+      </div>
+      <div class="popupMenu__row">
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購02</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購02</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購02</p>
+          </a>
+        </li>
+      </div>
+      <div class="popupMenu__row">
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購02</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購02</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購02</p>
+          </a>
+        </li>
+      </div>
+    </ul>
+    <!-- 第三格選單 -->
+    <ul class="popupMenu content3">
+      <!-- popupMenu__row 一排 最多3個頁簽 -->
+      <div class="popupMenu__row">
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購03</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購03</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購03</p>
+          </a>
+        </li>
+      </div>
+      <div class="popupMenu__row">
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購03</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購03</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購03</p>
+          </a>
+        </li>
+      </div>
+      <div class="popupMenu__row">
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購03</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購03</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購03</p>
+          </a>
+        </li>
+      </div>
+      <div class="popupMenu__row">
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購03</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購03</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購03</p>
+          </a>
+        </li>
+      </div>
+    </ul>
+    <!-- 第四格選單 -->
+    <ul class="popupMenu content4">
+      <!-- popupMenu__row 一排 最多3個頁簽 -->
+      <div class="popupMenu__row">
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購04</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購04</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購04</p>
+          </a>
+        </li>
+      </div>
+      <div class="popupMenu__row">
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購04</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購04</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購04</p>
+          </a>
+        </li>
+      </div>
+      <div class="popupMenu__row">
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購04</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購04</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購04</p>
+          </a>
+        </li>
+      </div>
+      <div class="popupMenu__row">
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購04</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購04</p>
+          </a>
+        </li>
+        <li class="bbar_item">
+          <a
+            href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=26000824235dIMYyGSV&kdid=NA01">
+            <p class="text-black">美食團購04</p>
+          </a>
+        </li>
+      </div>
+    </ul>
+  </div>
+  <!-- topback-mob -->
+  <div class="topback-mob"></div>
+</div>
+<!-- MOBILE區塊_下方選單結束 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ============================================================================================================
+		.................................................. DOM_組版架構 ................................................
+	==============================================================================================================-->
+
+
+<!-- 宮格標題區 css -->
+<style>
+  .wrap_title {
+    width: 100%;
+    font-size: 40px;
+    line-height: 60px;
+    height: 80px;
+    font-family: 'Arial', 'Helvetica,Verdana', 'Microsoft JhengHei UI Regular', '微軟正黑體 Light', '微軟正黑體', '新細明體', 'Noto Sans TC';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .wrap_title * {
+    width: 100%;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .wrap_title a,
+  .wrap_title a:hover,
+  .wrap_title a:visited,
+  .wrap_title a:active {
+    color: #3e4d2c;
+    text-decoration: none;
+    outline: 0;
+  }
+
+  .wrap_title .title_outer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .wrap_title .title_outer .title_inner {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50px;
+  }
+
+  /*標題底色*/
+  .wrap_title {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#073f00+0,52c234+99 */
+    background: #073f00;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #07d9f5 0%, #096beb 99%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #07d9f5 0%, #096beb 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #07d9f5 0%, #096beb 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#07d9f5 ', endColorstr='#096beb', GradientType=0);
+    /* IE6-9 */
+  }
+
+  /*.wrap_title{ background: url(./images/bb.jpg) top center #fdd577;}*/
+  /*文字顏色*/
+  .wrap_title .title_outer .title_inner {
+    font-size: 40px;
+    background-color: #FFFFFF;
+    color: #131212;
+    font-weight: bold;
+  }
+
+  @media all and (max-width:540px),
+  all and (max-device-width:540px) {
+    .wrap_title .title_outer .title_inner {
+      font-size: 8vw;
+    }
+  }
+
+</style>
+
+<!-- 宮格區 css -->
+<style>
+  .wrap_box_0b4s {
+    width: 100%;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: 'Arial', 'Helvetica,Verdana', 'Microsoft JhengHei UI Regular', '微軟正黑體 Light', '微軟正黑體', '新細明體', 'Noto Sans TC';
+    padding: 10px 10px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .wrap_box_0b4s.last {
+    padding: 10px 10px
+  }
+
+  .wrap_box_0b4s:last-child {
+    padding-bottom: 10px;
+  }
+
+  .wrap_box_0b4s * {
+    width: 100%;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .wrap_box_0b4s a,
+  .wrap_box_0b4s a:hover,
+  .wrap_box_0b4s a:visited,
+  .wrap_box_0b4s a:active {
+    color: #362e2b;
+    text-decoration: none;
+    outline: 0;
+  }
+
+  .wrap_box_0b4s .box_outer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: table;
+  }
+
+  .wrap_box_0b4s .box_outer .box_inner {
+    width: 23.75%;
+    margin: 10px 0 10px 1%;
+    border: 1px solid #e5e5e5;
+    float: left;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 60;
+    background-color: rgba(255, 255, 255, .9);
+  }
+
+  .wrap_box_0b4s .box_outer .box_inner .box_icon {
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  .wrap_box_0b4s .box_outer .box_inner .box_icon:before {
+    content: "";
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .wrap_box_0b4s .box_outer .box_inner .box_icon span {
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 16px;
+  }
+
+  .wrap_box_0b4s .box_outer .box_inner .box_photo {
+    padding: 10px;
+    background-color: #FFFFFF;
+  }
+
+  .wrap_box_0b4s .box_outer .box_inner .box_photo img {
+    width: 100%;
+    display: block;
+  }
+
+  .wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_h1 {
+    padding: 0 10px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 15px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_h2 {
+    padding: 0 11px;
+    margin: 10px 0;
+    height: 54px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price {
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price .price_origin {
+    color: #f7f7f7;
+    display: inline;
+    text-decoration: line-through;
+  }
+
+  .wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price .price_sale {
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ac0000;
+  }
+
+  .wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price .price_sale.line-through {
+    text-decoration: line-through;
+  }
+
+  .wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price .price_origin:before,
+  .wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price .price_sale:before {
+    content: "$";
+    font-size: 13px;
+  }
+
+  .wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price .price_origin:before,
+  .wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price .sale2:before {
+    content: "折後價$";
+    font-family: Microsoft JhengHei;
+  }
+
+  @media all and (max-width:768px),
+  all and (max-device-width:768px) {
+    .wrap_box_0b4s .box_outer {
+      max-width: 768px;
+    }
+
+    .wrap_box_0b4s .box_outer .box_inner {
+      width: 47%;
+      margin: 10px 0 10px 2%;
+    }
+
+    .wrap_box_0b4s .box_outer .box_inner:nth-child(1),
+    .wrap_box_0b4s .box_outer .box_inner:nth-child(2) {
+      margin-bottom: 0;
+    }
+
+    .wrap_box_0b4s .box_outer .box_inner .box_icon {
+      top: 5px;
+      left: 5px;
+    }
+  }
+
+  /*宮格底色*/
+  .wrap_box_0b4s {
+    background-color: #43cdf7;
+    /*background: url(http://img.udn.com/art/20180601_cool/./images/BGBG.jpg) top center repeat rgba(228,228,228,1);*/
+  }
+
+  /*圓標底色*/
+  .wrap_box_0b4s .box_outer .box_inner .box_icon {
+    background-color: #413A3B;
+    color: #fff;
+  }
+
+  /*特標底色*/
+  .wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_h1 {
+    background-color: #08acf8;
+    color: #fff;
+  }
+
+  /*品名底色*/
+  .wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_h2 {
+    color: #000;
+  }
+
+  /*價格顏色*/
+  .wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price {
+    color: #ac0000;
+  }
+
+</style>
+
+
+<!-- 注意事項區 css -->
+<style>
+  .precautions {
+    width: 100%;
+    font-size: 8px;
+    line-height: 20px;
+    height: auto;
+    font-family: 'Arial', 'Helvetica,Verdana', 'Microsoft JhengHei UI Regular', '微軟正黑體 Light', '微軟正黑體', '新細明體', 'Noto Sans TC';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: left;
+    margin-top: 10px;
+    /* 區塊顏色 */
+    background-color: #302f2e;
+  }
+
+  .precautions_box {
+    display: block;
+    margin: 0 auto;
+    max-width: 1190px;
+    padding: 12px;
+    list-style: none;
+    /* background-color: #52c234; */
+  }
+
+  .precautions_text {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    /* 文字顏色 */
+    color: rgb(250, 245, 245);
+  }
+
+  @media all and (max-width:640px),
+  all and (max-device-width:640px) {
+    .precautions {
+      width: 100%;
+      margin-top: 0px;
+      /* margin-bottom: 10%; */
+    }
+
+    .precautions_text {
+      text-align: center;
+      /* 文字顏色 */
+      color: rgb(250, 245, 245);
+    }
+  }
+
+</style>
+
+
+
+<!-- 1 ------------------------------------------------------------------------------------>
+<div class="wrap_title">
+  <div class="title_outer">
+    <div class="title_inner">曬兒不能輸▼47折up
+    </div>
+  </div>
+</div>
+<!-- 第1-1排 ------------------------------------------------------------------------------------>
+<div class="wrap_box_0b4s">
+  <div class="box_outer">
+    <!-- 商品1 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c02.do?dc_cargxuid_0=U010407557"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">限時92折</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">Switch精靈寶可夢皮卡丘精靈球組</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale line-through">2990</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品2 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c02.do?dc_cargxuid_0=U010071310"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">單機破盤下殺</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">ASUS T101HA 10.1吋 平板筆電</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">7750</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品3 -->
+    <div class="box_inner"> <a
+        href="https://shopping.udn.com/mall/cus/cat/Cc1c02.do?dc_cateid_0=E_008_002_012&dc_cargxuid_0=U010457732"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">破盤特殺74折</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">LG 樂金 34吋21:9 QHD電競螢幕</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">19999</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品4 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=G_001_002_015"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">新品享驚喜價</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">SHARP夏普 40吋連網液晶顯示器</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">8XXX</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- END -->
+  </div>
+</div>
+<!-- 第1-2排 ------------------------------------------------------------------------------------>
+<div class="wrap_box_0b4s">
+  <div class="box_outer">
+    <!-- 商品5 -->
+    <div class="box_inner"> <a
+        href="https://shopping.udn.com/mall/cus/cat/Cc1c02.do?dc_cateid_0=Q_005_015_012&dc_cargxuid_0=U010004948"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">贈小風扇▼88折</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">Bone 蜘蛛人公仔行動電源6700mAh</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">1680</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品6 -->
+    <div class="box_inner"> <a
+        href="https://shopping.udn.com/mall/cus/cat/Cc1c02.do?dc_cateid_0=Q_003_019_002_003&dc_cargxuid_0=U010333881"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">結帳85折</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">InfoThink 死侍 Apple快充傳輸線</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">690</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品7 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c02.do?dc_cargxuid_0=U010267764"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">破盤下殺47折</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">媽媽咪呀兒童汽車增高坐墊</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">550</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品8 -->
+    <div class="box_inner"> <a
+        href="https://shopping.udn.com/mall/cus/cat/Cc1c02.do?dc_cateid_0=P_007_006_013&dc_cargxuid_0=U010301939"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">78折▼送野餐墊</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">UE Wonderboom 防水無線藍牙喇叭</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">2490</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- END -->
+  </div>
+</div>
+
+<!-- 2 ------------------------------------------------------------------------------------>
+<div class="wrap_title">
+  <div class="title_outer">
+    <div class="title_inner">最懂寶貝心▼55折up
+    </div>
+  </div>
+</div>
+<!-- 第2-1排 ------------------------------------------------------------------------------------>
+
+<div class="wrap_box_0b4s">
+  <div class="box_outer">
+    <!-- 商品9 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c02.do?dc_cargxuid_0=U008291138"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">輕量，155g重</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">Hello Kitty抗UV超輕三折晴雨傘</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">299</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品10 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=M_005_003_006_009"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">85折▼U型氣墊</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">Hello Kitty雙層反光後背書包</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">999</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品11 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=M_003_001_034"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">85折▼三階段玩法</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">以色列Yookidoo健力遊戲墊</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">2620</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品12 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=X_001_002_004"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">三麗鷗獨家授權</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">KITTY收納箱23L 6入</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">1680</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- END -->
+  </div>
+</div>
+<!-- 第2-2排 ------------------------------------------------------------------------------------>
+
+<div class="wrap_box_0b4s">
+  <div class="box_outer">
+    <!-- 商品13 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=T_001_004_012_002"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">紅豆餅平盤章魚燒</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">歌林日式多功能電烤盤 / 可拆洗 </div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">2580</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品14 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=H_005_010_009"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">增添吃飯樂趣</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">日本Arnest 造型飯糰模組</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">385</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品15 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=M_002_005_092"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">87折▼邏輯訓練</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">荷蘭Petit Monkey拼圖(48片/4Y+)</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">478</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品16 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=I_003_015_001"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">安全舒適踏實穩坐</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">時尚屋 踏圈固定輪兒童椅</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">1299</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- END -->
+  </div>
+</div>
+
+
+<!-- 3 ------------------------------------------------------------------------------------>
+<div class="wrap_title">
+  <div class="title_outer">
+    <div class="title_inner">遛哇兒法寶▼33折up
+    </div>
+  </div>
+</div>
+
+<!-- 第3-1排 ------------------------------------------------------------------------------------>
+
+<div class="wrap_box_0b4s">
+  <div class="box_outer">
+    <!-- 商品17 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=C_009_023_068_002"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">魔術大空間▼33折</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">Bogazy 29吋行李箱</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">1680</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品18 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=C_004_015_009_002"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">5折▼親子一起穿</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">GIAT-3M吸濕排汗抗UV兒童外套</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">349</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品19 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=O_005_001_003"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">六大體驗區任遊▼94折</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">飛牛牧場 雙人入園劵+飛牛白布丁</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">660</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品20 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=O_005_001_002"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">家長放心孩童開心▼92折</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">騎士堡 2小時親子券 </div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">299</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- END -->
+  </div>
+</div>
+
+<!-- 第3-2排 ------------------------------------------------------------------------------------>
+
+<div class="wrap_box_0b4s">
+  <div class="box_outer">
+    <!-- 商品21 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=C_007_003_075_010"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">限時促銷▼7折</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">卡駱馳 趣味克駱格童鞋</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">1250</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品22 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=J_003_010_001"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">正版迪士尼授權▼75折</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">Disney米奇米妮巧克力搖搖棒</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">899</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品23 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=J_003_004_071"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">酥脆不油膩▼71折</div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">SEABROOK 英國波浪洋芋片</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">100</div>/包
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- 商品24 -->
+    <div class="box_inner"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=N_001_006_065"
+        target="_blank">
+        <!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+        <div class="box_photo"> <img src="https://i.ibb.co/jLPdjhB/222.jpg">
+          <!-- 圖片位置 -->
+        </div>
+        <div class="box_txt">
+          <div class="box_txt_h1">小兒專屬85折
+          </div>
+          <!-- 特標 -->
+          <div class="box_txt_h2">悠活原力小兒金盞花軟糖</div>
+          <!-- 品名 -->
+          <div class="box_txt_price">
+            <!-- <div class="price_origin">100,000</div> -->
+            <!-- 原價 -->
+            <div class="price_sale">595</div>
+            <!-- 特價 -->
+          </div>
+          <div class="box_txt_btn"></div>
+        </div>
+      </a> </div>
+    <!-- END -->
+  </div>
+</div>
+
+
+<!-- 注意事項 ------------------------------------------------------------------------------------>
+<div class="precautions">
+  <ul class="precautions_box">
+    <li class="precautions_text">
+      ※本活動頁優惠商品數量有限，售完為止。本活動頁商品規格、顏色、價位、贈品、回饋金如與購物車不符，以購物車標示為準。
+    </li>
+    <!-- <li class="precautions_text">
+                        2.上述各活動請參照各活動之活動說明與注意事項。各活動如有未盡事宜，udn買東西購物中心擁有保留修改活動內容之權利，調整內容將於本網站上公告，不另行通知。
+                    </li> -->
+  </ul>
+</div>
